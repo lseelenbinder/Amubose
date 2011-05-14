@@ -1,6 +1,13 @@
 function go(e) {
     var links = $("textarea").val();
     links = links.split(/[\n|;]+/);
+    var justKindle = $(":checkbox")[0].checked;
+    if (justKindle)
+        var searchIndex = "digital-text";
+    else
+        var searchIndex = "books";
+
+    var searchType = "digit";
     for (var i = 0; i < links.length; i++) {
         var url = "http://www.amazon.com/gp/";
         var args = [
@@ -14,7 +21,7 @@ function go(e) {
             url += "search";
             args = args.concat([
                 {name:"url",value:"search-alias=aps"},
-                {name:"index",value:"books"},
+                {name:"index",value:searchIndex},
                 {name:"keywords",value:$.trim(links[i])},
             ]);
         }

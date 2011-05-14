@@ -12,7 +12,7 @@
 configuration.sass_options = {
   :style => :compressed,
   :line_numbers => false
-
+}
  
 # Default is an empty hash
 # http://haml-lang.com/docs/yardoc/file.HAML_REFERENCE.html#options

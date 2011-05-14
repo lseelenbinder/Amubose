@@ -2,6 +2,9 @@
 #form
   %p
     =text_area "q", @textvalue
+    <br/>
+    %input{ :type => "checkbox", :name => "kindle" }
+    Search for just Kindle books
   %p
     %input{ :type => "submit", :value => "Get 'em"}
 #instructions
