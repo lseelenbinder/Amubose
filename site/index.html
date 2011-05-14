@@ -23,7 +23,7 @@
           });
           $(":submit").click(go);
           $("a[href='#']").click(function() {
-            $("#instructions").fadeToggle();
+            $("#instructions").slideToggle();
           });
         });
       //]]>
@@ -39,22 +39,26 @@
         <input type='submit' value="Get 'em" />
       </p>
     </div>
-    <p id='explain'>
+    <div id='instructions'>
+      <ol>
+      <li>Enter your list of books separated by semi-colons, pipes (|), or one per line.</li>
+      <li>Press "Get 'em."</li>
+      <li>Amubos&eacute; opens a search or a product page for every single book title or ISBN.</li>
+      <li>Enjoy.</li>
+      <li><a href="#">Got it.</a></li>
+      </ol>
+    </div>
+    <div id='explain'>
       <p>Ever needed to search Amazon for a whole list of books? Yeah. So have I, and it is <strong>awful</strong>.</p>
       
       <p>Up until now you had to search</p>
       
       <p>one. stinkin'. book. at. a. time.</p>
       
-      <p><em>Amubos&eacute; fixes that.</em> <a href="#">how?</a></p>
-      <div id='instructions'>
-        <ol>
-        <li>Enter your list of books separated by semi-colons, pipes (|), or one per line.</li>
-        <li>Press "Get 'em."</li>
-        <li>Amubos&eacute; opens a search or a product page for every single book title or ISBN.</li>
-        <li>Enjoy.</li>
-        </ol>
-      </div>
-    </p>
+      <p><em>Amubos&eacute; fixes that.</em></p>
+    </div>
+    <div id='footer'>
+      <p>By Luke Seelenbinder, another venture into javascript and typography</p>
+    </div>
   </body>
 </html>

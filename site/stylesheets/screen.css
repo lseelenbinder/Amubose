@@ -14,17 +14,24 @@ body {
 
 /* line 11 */
 textarea {
+  font-family: "Cabin", serif;
+  font-size: 1em;
   height: 200px;
   width: 450px;
 }
 
-/* line 14 */
+/* line 17 */
 a {
   color: #005d97;
   text-decoration: none;
 }
 
-/* line 17 */
+/* line 20 */
+p {
+  font-size: 1.25em;
+}
+
+/* line 22 */
 .how {
   margin: 0 auto;
   padding: 2px;
@@ -32,10 +39,19 @@ a {
   width: 450px;
 }
 
-/* line 22 */
+/* line 27 */
 #instructions {
-  display: none;
   margin: 0 auto;
   text-align: left;
   width: 450px;
+}
+
+/* line 31 */
+#footer {
+  margin: 100px auto 10px;
+}
+/* line 33 */
+#footer p {
+  font-size: 1em;
+  font-style: italic;
 }

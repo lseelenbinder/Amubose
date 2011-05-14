@@ -22,9 +22,11 @@
         });
         $(":submit").click(go);
         $("a[href='#']").click(function() {
-          $("#instructions").fadeToggle();
+          $("#instructions").slideToggle();
         });
       });
   %body
     %h1#logo amubos&eacute;
     = yield
+    #footer
+      %p By Luke Seelenbinder, another venture into javascript and typography
