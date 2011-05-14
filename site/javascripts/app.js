@@ -1,6 +1,6 @@
 function go(e) {
     var links = $("textarea").val();
-    links = links.split(/[\n,;]+/);
+    links = links.split(/[\n|;]+/);
     for (var i = 0; i < links.length; i++) {
         var url = "http://www.amazon.com/gp/";
         var args = [

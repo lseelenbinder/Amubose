@@ -1,6 +1,7 @@
+- @textvalue = "Your books."
 #form
   %p
-    =text_area "q", "Your books, one per line."
+    =text_area "q", @textvalue
   %p
     %input{ :type => "submit", :value => "Get 'em"}
 %p#explain
@@ -21,7 +22,8 @@
 
     Amubos&eacute; fixes that.
     
-    1. Enter your list of books separated by commas, semi-colons, or one per line.
-    2. Press "Get 'em."
-    3. Enjoy.
+    1. Enter your list of books separated by semi-colons, pipes (|), or one per line.
+    2. Have some ISBNs? Those will go straight to the product page.
+    3. Press "Get 'em."
+    4. Enjoy.
     

@@ -9,6 +9,18 @@
     <script type='text/javascript'>
       //<![CDATA[
         $(document).ready(function() {
+          $("textarea").focus(function() {
+            if ($(this).val() == "Your books.") {
+              $(this).val("");
+              $(this).toggleClass("edited", true);
+            }
+          })
+          .blur(function() {
+            if ($(this).val() == "" || $(this).val() == "Your books.") {
+              $(this).val("Your books.");
+              $(this).toggleClass("edited", false);
+            }
+          });
           $(":submit").click(go);
         });
       //]]>
@@ -18,7 +30,7 @@
     <h1 class='logo'>amubos&eacute;</h1>
     <div id='form'>
       <p>
-        <textarea id="q" name="q">Your books, one per line.</textarea>
+        <textarea id="q" name="q">Your books.</textarea>
       </p>
       <p>
         <input type='submit' value="Get 'em" />
@@ -42,7 +54,8 @@
       <p>Amubos&eacute; fixes that.</p>
       
       <ol>
-      <li>Enter your list of books separated by commas, semi-colons, or one per line.</li>
+      <li>Enter your list of books separated by semi-colons, pipes (|), or one per line.</li>
+      <li>Have some ISBNs? Those will go straight to the product page.</li>
       <li>Press "Get 'em."</li>
       <li>Enjoy.</li>
       </ol>

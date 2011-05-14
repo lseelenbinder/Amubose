@@ -8,6 +8,18 @@
     = javascripts(:app, :isbn)
     :javascript
       $(document).ready(function() {
+        $("textarea").focus(function() {
+          if ($(this).val() == "#{ @textvalue }") {
+            $(this).val("");
+            $(this).toggleClass("edited", true);
+          }
+        })
+        .blur(function() {
+          if ($(this).val() == "" || $(this).val() == "#{ @textvalue }") {
+            $(this).val("#{@textvalue}");
+            $(this).toggleClass("edited", false);
+          }
+        });
         $(":submit").click(go);
       });
   %body
