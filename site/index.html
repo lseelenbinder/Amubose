@@ -22,12 +22,15 @@
             }
           });
           $(":submit").click(go);
+          $("a[href='#']").click(function() {
+            $("#instructions").fadeToggle();
+          });
         });
       //]]>
     </script>
   </head>
   <body>
-    <h1 class='logo'>amubos&eacute;</h1>
+    <h1 id='logo'>amubos&eacute;</h1>
     <div id='form'>
       <p>
         <textarea id="q" name="q">Your books.</textarea>
@@ -37,28 +40,21 @@
       </p>
     </div>
     <p id='explain'>
-      <p>Ever needed to search Amazon for a whole list of books? Yeah. So have I, and it is <strong>awful</strong>. Up until now you had to search</p>
+      <p>Ever needed to search Amazon for a whole list of books? Yeah. So have I, and it is <strong>awful</strong>.</p>
       
-      <p>one.</p>
+      <p>Up until now you had to search</p>
       
-      <p>stinkin'.</p>
+      <p>one. stinkin'. book. at. a. time.</p>
       
-      <p>book.</p>
-      
-      <p>at.</p>
-      
-      <p>a.</p>
-      
-      <p>time.</p>
-      
-      <p>Amubos&eacute; fixes that.</p>
-      
-      <ol>
-      <li>Enter your list of books separated by semi-colons, pipes (|), or one per line.</li>
-      <li>Have some ISBNs? Those will go straight to the product page.</li>
-      <li>Press "Get 'em."</li>
-      <li>Enjoy.</li>
-      </ol>
+      <p><em>Amubos&eacute; fixes that.</em> <a href="#">how?</a></p>
+      <div id='instructions'>
+        <ol>
+        <li>Enter your list of books separated by semi-colons, pipes (|), or one per line.</li>
+        <li>Have some ISBNs? Those will go straight to the product page.</li>
+        <li>Press "Get 'em."</li>
+        <li>Enjoy.</li>
+        </ol>
+      </div>
     </p>
   </body>
 </html>

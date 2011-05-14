@@ -21,7 +21,10 @@
           }
         });
         $(":submit").click(go);
+        $("a[href='#']").click(function() {
+          $("#instructions").fadeToggle();
+        });
       });
   %body
-    %h1.logo amubos&eacute;
+    %h1#logo amubos&eacute;
     = yield

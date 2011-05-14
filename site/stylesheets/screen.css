@@ -1,5 +1,41 @@
 /* line 1 */
 body {
-  font-family: Verdana;
-  font-size: 10pt;
+  font-family: "Cabin", serif;
+  text-align: center;
+}
+
+/* line 5 */
+#logo {
+  color: #18a6ff;
+  font-size: 6em;
+  margin: 100px auto 75px;
+  text-shadow: 3px 3px 3px #bbbbbb;
+}
+
+/* line 11 */
+textarea {
+  height: 200px;
+  width: 450px;
+}
+
+/* line 14 */
+a {
+  color: #005d97;
+  text-decoration: none;
+}
+
+/* line 17 */
+.how {
+  margin: 0 auto;
+  padding: 2px;
+  text-align: right;
+  width: 450px;
+}
+
+/* line 22 */
+#instructions {
+  display: none;
+  margin: 0 auto;
+  text-align: left;
+  width: 450px;
 }
